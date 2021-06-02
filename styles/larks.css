@@ -1,0 +1,107 @@
+body {
+  /* background: url(https://image.freepik.com/free-vector/technological-abstract-background_23-2148897675.jpg) no-repeat center center fixed; */
+  background: url(https://image.freepik.com/free-vector/gradient-liquid-abstract-background_52683-60469.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.offcanvas-header{ display:none; }
+
+@media (max-width: 992px) {
+  .offcanvas-header{ display:block; }
+  .navbar-collapse {
+    position: fixed;
+    top:0; 
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: black;
+    transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+    z-index: 999;
+  }
+  .navbar-collapse.show {
+    visibility: visible;
+    transform: translateX(-100%);
+  }
+}
+
+.btn-close:focus {
+	box-shadow: none;
+}
+
+.btn-outline-danger:active, .btn-outline-danger:hover {
+	background: transparent;
+	border: none;
+}
+
+.bg-glass {
+	color: #fff;
+  background-color: rgb(255 255 255 / 30%);
+}
+
+.custom-navbar .navbar-nav li > a {
+	text-transform: capitalize;
+	transition: background-color 0.2s, color 0.2s;
+  }
+  .custom-navbar .navbar-nav li > a:hover, #topheader .navbar-nav li > a:focus {
+	background-color: transparent;
+	color: #fff;
+  }
+  
+  .custom-navbar .navbar-nav li.active > a {
+	background: transparent;
+	color: #fff;
+	border-bottom: 2px solid red;
+  }
+
+  .glass-button {
+    display: inline-block;
+    padding: 14px 22px;
+    border: 0;
+    text-decoration: none;
+    background-color: rgba(255,255,255,0.1);
+    /* backdrop-filter: blur(30px); */
+    color: rgba(255,255,255,0.8);
+    font-size: 14px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  .glass-button:hover {
+    background-color: rgba(255,255,255,0.2);
+    color: #fff;
+  }
+
+  .wrapper .verticalBar {
+    display: flex !important;
+    align-items: center;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 900;
+    position: relative;
+    text-transform: uppercase;
+    white-space: nowrap;
+    width: 300px;
+  }
+  .wrapper .verticalBar.verticalBarLeft {
+    left: -20px;
+    top: 280px;
+    transform: rotate(-90deg);
+    transform-origin: 0 50%;
+  }
+  .wrapper .verticalBar .line {
+    background: #fff;
+    height: 1px;
+    margin: 0 20px;
+    width: 100%;
+  }
