@@ -11,7 +11,10 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./styles/larks.css" />
+    <link rel="stylesheet" href="./styles/customslick.css" />
+
     <title>Larks</title>
 </head>
 
@@ -36,10 +39,16 @@
                     <li class="nav-item pe-3 active fw-bold"> <a class="nav-link text-white" href="index.html">Home </a>
                     </li>
                     <li class="nav-item pe-3"><a class="nav-link text-white" href="about.html"> About </a></li>
-                    <li class="nav-item pe-3"><a class="nav-link text-white" href="services.html"> Expertise </a></li>
+                    <li class="nav-item pe-3"><a class="nav-link text-white" href="services.html"> solutions </a></li>
+                    <li class="nav-item pe-3"><a class="nav-link text-white" href="portfolio.html"> Portfolio </a></li>
+                    <li class="nav-item pe-3">
+                        <a href="contact.html"
+                            class="nav-link text-white btn btn-light rounded-pill border-0 glass-button"><b>Lets
+                                Talk!</b> </a>
+                    </li>
                 </ul>
             </div>
-        </nav>        
+        </nav>
 
         <!-- carousel -->
         <div class="p-5 mt-2 pb-0 bg-glass">
@@ -57,36 +66,49 @@
                         <div class="carousel-item active">
                             <div class="row">
                                 <div class="col-6">
-                                    <img src="./assets/slider1.svg" class="d-block w-100 h-75" alt="larks-dev">
+                                    <img src="./assets/slider1.svg" class="d-block w-100 h-75 img-fluid d-none d-sm-block"
+                                        alt="larks-dev">
                                 </div>
-                                <div class="col-6 text-white">
-                                    <p class="text-start fs-5"> --- Design & Development</p>
-                                    <h3 class="display-5 fw-bold text-start">We move the <mark>Digital Industry</mark> forward
+                                <div class="col-lg-6 col-xs-12 text-white">
+                                    <p class="text-start fs-5 custom-text-border">Design & Development</p>
+                                    <h3 class="display-5 fw-bold text-start">We move the <mark>Digital Industry</mark>
+                                        forward
                                     </h3>
-                                    <p class="text-start text-white-50 fs-6">Help find solutions intutive and in accordance with client business goals. we provide high-quality services design and development.</p>
+                                    <p class="text-start text-white-50 fs-6 pt-1 d-none d-sm-block">Help find solutions intutive and in
+                                        accordance with client business goals. we provide high-quality services design
+                                        and development.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="row">
                                 <div class="col-6">
-                                    <img src="./assets/slider1.svg" class="d-block w-100 h-75" alt="larks-dev">
+                                    <img src="./assets/slider2.svg" class="d-block w-100 h-75 img-fluid d-none d-sm-block"
+                                        alt="larks-dev">
                                 </div>
-                                <div class="col-6 text-white">
-                                    <p class="text-start fs-5"> --- Creative & innovative</p>
-                                    <h3 class="display-5 fw-bold text-start"><mark>Creativity</mark> Combines with <mark>Innovation</mark> </h3>
-                                    <p class="text-start text-white-50 fs-6">We are a team of young tech people who loves to play with new technology.We continually experiment with new technologies & implement them with greater results.</p>
+                                <div class="col-lg-6 col-xs-12 text-white">
+                                    <p class="text-start fs-5 custom-text-border">Creative & innovative</p>
+                                    <h3 class="display-5 fw-bold text-start"><mark>Creativity</mark> Combines with
+                                        <mark>Innovation</mark> </h3>
+                                    <p class="text-start text-white-50 fs-6 pt-1 d-none d-sm-block">We are a team of young tech people who
+                                        loves to play with new technology.We continually experiment with new
+                                        technologies & implement them with greater results.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="row">
                                 <div class="col-6">
-                                    <img src="./assets/slider2.svg" class="d-block w-100 h-75" alt="larks-dev">
+                                    <img src="./assets/slider3.svg" class="d-block w-100 h-75 img-fluid d-none d-sm-block"
+                                        alt="larks-dev">
                                 </div>
-                                <div class="col-6 text-white">
-                                    <h1 class="display-5 fw-bold text-start">We are digital agency that <mark>Craft, Write</mark> and <mark>play</mark></h1>
-                                    <!-- <p class="fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p> -->
+                                <div class="col-lg-6 col-xs-12 text-white">
+                                    <p class="text-start fs-5 custom-text-border">Design & Branding</p>
+                                    <h3 class="display-5 fw-bold text-start">We create <mark>Award-Winning</mark> brands
+                                    </h3>
+                                    <p class="text-start text-white-50 fs-6 pt-1 d-none d-sm-block">We love envisioning a positive future
+                                        and doing our part to create it. It is our mission to help illuminate the way
+                                        forward for brands,bringing thier future into reality.</p>
                                 </div>
                             </div>
                         </div>
@@ -105,38 +127,440 @@
             </div>
         </div>
 
-        <!-- services -->
-        <!-- <div class="p-5 mb-4 bg-glass">
-            
+        <!-- clients -->
+        <!-- <div class="p-5 pt-0 bg-glass">
+            <div class="row">
+                <h5 class="text-center">Trusted by companies like</h5>
+            </div>
+            <div class="row align-items-center">
+                <div class="customer-logos slider">
+                    <div class="col-2">
+                        <div class="slide"><img src="./assets/logos/plexihealth.png" class="img-fluid"></div>
+                    </div>
+                    <div class="col-2">
+                        <div class="slide"><img src="./assets/logos/jaatre.svg" class="img-fluid"></div>
+                    </div>
+                    <div class="col-2">
+                        <div class="slide"><img src="./assets/logos/bbc.png" class="img-fluid"></div>
+                    </div>
+                    <div class="col-2">
+                        <div class="slide"><img src="./assets/logos/iwst.png" class="img-fluid"></div>
+                    </div>
+                    <div class="col-2">
+                        <div class="slide"><img src="./assets/logos/iconica.png" class="img-fluid"></div>
+                    </div>
+                </div>
+            </div>
         </div> -->
 
+        <!-- services -->
+        <div class="p-5 pt-0 bg-glass">
+            <div class="wrapper">
+                <div class="verticalBar verticalBarLeft">
+                    <div class="text">SOLUTIONS</div>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-6 col-xs-12">
+                    <!-- <p class="text-start fs-6 text-decoration-underline" style="letter-spacing: 2px;">- ABOUT US</p> -->
+                    <h1 class="text-start">We balance creativity with logic to build robust beautiful experiences.</h1>
+                    <p class="text-start pt-3 fs-6">
+                        Below are some of the solutions that we provide.
+                    </p>
+                    <!-- <div class="text-start">
+                        <a href="about.html" target="_blank" class="btn btn-light rounded-pill border-0 glass-button text-start">Glass Link Button</a>
+                    </div> -->
+                </div>
+                <div class="col-lg-6 col-xs-12">
+                    <img src="./assets/services.svg" class="d-block w-100 h-75" alt="larks services">
+                </div>
+            </div>
+            <div class="row">
+                <div class="card-group">
+                    <div class="card bg-glass me-2">
+                        <img src="./assets/services/uiux.svg" class="card-img-top" style="height:200px;" alt="...">
+                        <div class="card-body text-white">
+                            <h5 class="card-title fw-bold">Design</h5>
+                            <p class="card-text">
+                                Experience strategy, User interface design , Design systems, Product prototyping &
+                                Optimization.
+                            </p>
+                            <a href="services.html" target="_blank"
+                                class="btn btn-light rounded-pill border-0 glass-button text-start">Know More</a>
+                        </div>
+                    </div>
+
+                    <div class="card bg-glass me-2">
+                        <img src="./assets/services/devops.svg" class="card-img-top" style="height:200px;"
+                            alt="larks devops">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Development</h5>
+                            <p class="card-text">Flexible, scalable and end to end software development solution based
+                                on your scale of business operation.</p>
+                            <a href="services.html" target="_blank"
+                                class="btn btn-light rounded-pill border-0 glass-button text-start">Know More</a>
+                        </div>
+                    </div>
+
+                    <div class="card bg-glass me-2">
+                        <img src="./assets/services/developer.svg" class="card-img-top" style="height:200px;"
+                            alt="larks developers">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Infrastructure</h5>
+                            <p class="card-text">Setting up a process and choosing right deployment method and automate
+                                the same by adopting CI/CD. </p>
+                            <a href="services.html" target="_blank"
+                                class="btn btn-light rounded-pill border-0 glass-button text-start">Know More</a>
+                        </div>
+                    </div>
+
+                    <div class="card bg-glass">
+                        <img src="./assets/services/maintain.svg" class="card-img-top" style="height:200px;" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Maintainence</h5>
+                            <p class="card-text">We make it easy to launch your business with best pricing, hosting
+                                services so they can manage thier websites smoothly.</p>
+                            <a href="services.html" target="_blank"
+                                class="btn btn-light rounded-pill border-0 glass-button text-start">Know More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- about us -->
-        <!-- <h2 class="text-center text-white fw-bold text-decoration-underline">About Us</h2> -->
-        <div class="p-5 mb-4 pt-0 bg-glass">
+        <div class="p-5 pt-0 bg-glass">
             <div class="wrapper">
                 <div class="verticalBar verticalBarLeft">
                     <div class="text">ABOUT US</div>
                     <div class="line"></div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-6">
+            <div class="row mt-4">
+                <div class="col-lg-6 col-xs-12">
+                    <img src="./assets/aboutus.svg" class="d-block w-100 h-75" alt="larks aboutus">
+                </div>
+
+                <div class="col-lg-6 col-xs-12">
                     <!-- <p class="text-start fs-6 text-decoration-underline" style="letter-spacing: 2px;">- ABOUT US</p> -->
                     <h1 class="text-start">Together we're building brighter futures</h1>
                     <p class="text-start pt-3 fs-6">
                         We are passionate about our work. Our team stays ahead of curve to provide the best effort to
                         make your business stand out.
                     </p>
-                    <div class="text-start">
-                        <a href="about.html" target="_blank" class="glass-button text-start">Glass Link Button</a>
+                    <div class="row mb-2">
+                        <div class="col-lg-6 col-xs-12">
+                            <a href="about.html" class="text-decoration-none">
+                                <div class="card bg-glass mobile-margin">
+                                    <div class="row g-0 align-items-center">
+                                        <div class="col-md-4">
+                                            <img src="./assets/consult.svg" class="card-img-top" style="height:80px;"
+                                                alt="larks Consultation">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body fw-bold">
+                                                Consultation
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-xs-12">
+                            <a href="about.html" class="text-decoration-none">
+                                <div class="card bg-glass mobile-margin">
+                                    <div class="row g-0 align-items-center">
+                                        <div class="col-md-4">
+                                            <img src="./assets/planning.svg" class="card-img-top" style="height:80px;"
+                                                alt="larks Consultation">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body fw-bold">
+                                                Planning
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-6">
-                    <img src="./assets/aboutus.svg" class="d-block w-100 h-75" alt="larks-dev">
+                    <div class="row mb-3">
+                        <div class="col-lg-6 col-xs-12">
+                            <a href="about.html" class="text-decoration-none">
+                                <div class="card bg-glass mobile-margin">
+                                    <div class="row g-0 align-items-center">
+                                        <div class="col-md-4">
+                                            <img src="./assets/execute.svg" class="card-img-top" style="height:80px;"
+                                                alt="larks Consultation">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body fw-bold">
+                                                Execute
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-xs-12">
+                            <a href="about.html" class="text-decoration-none">
+                                <div class="card bg-glass">
+                                    <div class="row g-0 align-items-center">
+                                        <div class="col-md-4">
+                                            <img src="./assets/result.svg" class="card-img-top" style="height:80px;"
+                                                alt="larks Consultation">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body fw-bold">
+                                                Result
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-start">
+                        <a href="about.html" target="_blank"
+                            class="btn btn-light rounded-pill border-0 glass-button text-start">Know More</a>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <!-- portfolio -->
+        <div class="p-5 pt-0 bg-glass">
+            <div class="wrapper">
+                <div class="verticalBar verticalBarLeft">
+                    <div class="text">PORTFOLIO</div>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-6 col-xs-12 order-2 order-lg-1">
+                    <h1 class="text-start">The work we do and people we help</h1>
+                    <p class="text-start pt-3 fs-6">
+                        We don't want our brand associated with anything that isn't of highest quality. The experiences
+                        we craft are what we truly value
+                    </p>
+                    <p class="text-start pt-3 fs-6">
+                        Trusted by clients
+                    </p>
+                    <div class="row">
+                        <div class="col-lg-2 col-xs-12">
+                            <img src="./assets/logos/plexihealth.png" class="float-start img-fluid h-75"
+                                alt="plexihealth">
+                        </div>
+                        <div class="col-lg-2 col-xs-12">
+                            <img src="./assets/logos/jaatre.svg" class="float-start img-fluid h-75" alt="plexihealth">
+                        </div>
+                        <div class="col-lg-2 col-xs-12">
+                            <img src="./assets/logos/iwst.png" class="float-start img-fluid h-75" alt="plexihealth">
+                        </div>
+                        <div class="col-lg-2 col-xs-12">
+                            <img src="./assets/logos/bbc.png" class="float-start img-fluid h-75" alt="plexihealth">
+                        </div>
+                        <div class="col-lg-2 col-xs-12">
+                            <img src="./assets/logos/iconica.png" class="float-start img-fluid h-75" alt="plexihealth">
+                        </div>
+                    </div>
+
+                    <div class="text-start mt-2">
+                        <a href="about.html" target="_blank"
+                            class="btn btn-light rounded-pill border-0 glass-button text-start">Know More</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xs-12 order-1 order-lg-2">
+                    <img src="./assets/testimonial.svg" class="d-block w-100 h-75" alt="larks-testimonials">
+                </div>
+            </div>
+        </div>
+
+        <!-- testimonials -->
+        <div class="p-5 pt-0 bg-glass">
+            <div class="wrapper">
+                <div class="verticalBar verticalBarLeft">
+                    <div class="text">TESTIMONIALS</div>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-6 col-xs-12">
+                    <img src="./assets/testimonial.svg" class="d-block w-100 h-75" alt="larks-testimonials">
+                </div>
+                <div class="col-lg-6 col-xs-12">
+                    <h1 class="text-start">Our happy clients says about us</h1>
+                    <p class="text-start pt-3 fs-6">
+                        Our customers love us! Read what they have to say below.
+                    </p>
+                    <div class="row align-items-center">
+                        <div class="testimonials-clean customer-testimonials slider">
+                            <div class="people slide">
+                                <div class="item">
+                                    <div class="box bg-glass text-white">
+                                        <p class="description">
+                                            Team of Larks is very young and dynamic. When I started getting my projects
+                                            with them, I was quite cynical thinking will anything go wrong because I was
+                                            working that project on tight deadlines. The way they handled the project
+                                            was unbelievable. They got into understanding my requirement by the root and
+                                            there was no further iterations to be made on there first cut itself. They
+                                            have capabilities of going big.
+                                        </p>
+                                    </div>
+                                    <div class="author"><img class="rounded-circle" src="./assets/logos/bbc.png">
+                                        <h5 class="name text-start">Bojappa Polanda</h5>
+                                        <p class="title text-start">CEO of Boring Business Creative.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="people slide">
+                                <div class="item">
+                                    <div class="box bg-glass text-white">
+                                        <p class="description">
+                                            Larks is a bunch of really enthusiastic, passionate and talented tech guys.
+                                            I am so happy to have known and associated with them. Their hard work,
+                                            commitment and dedication to work is amazing. They spend good time to
+                                            understand the requirement and then propose their ideas and designs which
+                                            are excellent.
+                                        </p>
+                                    </div>
+                                    <div class="author"><img class="rounded-circle" src="./assets/logos/jaatre.svg">
+                                        <h5 class="name text-start">Meghana S Belavadi</h5>
+                                        <p class="title text-start">CEO of Jaatre Technologies</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="people slide">
+                                <div class="item">
+                                    <div class="box bg-glass text-white">
+                                        <p class="description">
+                                            Srinidhi is an achiever as he uses his knowledge with intuition and skill to
+                                            reach the goal he sets. His sincere approach to problem-solving and
+                                            thoughtful ways, added to his amicable posture almost all the the time makes
+                                            him a special person by his employers. Wish him all the best in both his
+                                            professional and personal life, which he rightly deserves.
+                                        </p>
+                                    </div>
+                                    <div class="author"><img class="rounded-circle"
+                                            src="https://i.imgur.com/nUNhspp.jpg">
+                                        <h5 class="name text-start">Muralidhar P R</h5>
+                                        <p class="title text-start">Ex Head QA at Retd. ISRO Engineer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- blogs -->
+        <div class="p-5 pt-0 bg-glass">
+            <div class="wrapper">
+                <div class="verticalBar verticalBarLeft">
+                    <div class="text">FEATURED STORIES</div>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-6 col-xs-12 order-2 order-lg-1">
+                    <!-- <p class="text-start fs-6 text-decoration-underline" style="letter-spacing: 2px;">- ABOUT US</p> -->
+                    <h1 class="text-start">Latest stories and insights about design and technology</h1>
+                    <div class="card bg-glass border-0">
+                        <div class="row">
+                            <div class="col-lg-8 col-xs-12 p-4">
+                                <strong class="d-inline-block mb-2">
+                                    <span class="badge rounded-pill bg-light text-dark">Devops</span>
+                                </strong>
+                                <h5 class="mb-0">How to Serve a Static HTML Page using Nginx in a Kubernetes Cluster
+                                </h5>
+                                <div class="mb-1 text-white-50">May 27</div>
+                                <p class="card-text mb-auto">Nginx is a powerful reverse proxy routing your domains from
+                                    the Internet to your applications. </p>
+                                <div class="text-center mt-2">
+                                    <a href="blogs.html" target="_blank"
+                                        class="btn btn-light rounded-pill border-0 glass-button text-start">Read
+                                        More</a>
+                                </div>
+                            </div>
+                            <div class="col-4 p-0">
+                                <img src="https://image.freepik.com/free-vector/programmers-working-project-illustration_335657-384.jpg"
+                                    class="d-block w-100 h-100 d-none d-sm-block" alt="larks-testimonials">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xs-12 order-1 order-lg-2">
+                    <img src="./assets/blog.svg" class="d-block w-100 h-75" alt="larks services">
+                </div>
+            </div>
+        </div>
+
+        <!-- contact us -->
+        <div class="container p-5 pt-0">
+            <div class="row mt-4">
+                <div class="col-lg-8 col-xs-12 mx-auto contact-card">
+                    <div class="card bg-glass p-5">
+                        <h1>Have a Project in mind ?</h1>
+                        <div class="text-center mt-2">
+                            <a href="contact.html" target="_blank"
+                                class="btn btn-light rounded-pill border-0 glass-button text-start">
+                                Lets Talk!
+                            </a>
+                        </div>
+                    </div>                
+                </div>                                
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="w-100 py-4 flex-shrink-0 bg-glass">
+            <div class="container py-4">
+                <div class="row gy-4 gx-5">
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="h1 text-white">LARKS.</h5>
+                        <p class="small text-white">LARKS company started in year 2013 and started exploring on how to
+                            simplify the things that are used in daily life. On exploring solutions we came across how
+                            to reduce human difficulty. </p>
+                        <p class="small text-white mb-0">&copy; Copyrights. All rights reserved. <a class="text-white"
+                                href="larks.in">larks.in</a></p>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <h5 class="text-white mb-3 text-start">Quick links</h5>
+                        <ul class="list-unstyled text-white text-start">
+                            <li><a href="index.html" class="text-decoration-none text-white">Home</a></li>
+                            <li><a href="about.html" class="text-decoration-none text-white">About Us</a></li>
+                            <li><a href="services.html" class="text-decoration-none text-white">Solutions</a></li>
+                            <li><a href="portfolio.html" class="text-decoration-none text-white">Our Portfolio</a></li>
+                            <li><a href="blogs.html" class="text-decoration-none text-white">Blogs</a></li>
+                            <li><a href="contact.html" class="text-decoration-none text-white">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <ul class="list-unstyled text-white text-start">
+                            <li><a href="#" class="text-decoration-none text-white">Dribble</a></li>
+                            <li><a href="#" class="text-decoration-none text-white">Instagram</a></li>
+                            <li><a href="#" class="text-decoration-none text-white">Behance</a></li>
+                            <li><a href="#" class="text-decoration-none text-white">Facebook</a></li>
+                            <li><a href="#" class="text-decoration-none text-white">Linkedin</a></li>
+                            <li><a href="#" class="text-decoration-none text-white">Twitter</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="text-white mb-3">Newsletter</h5>
+                        <p class="small text-white">Subscribe to our Newsletter and get updates of company.</p>
+                        <form action="#">
+                            <div class="input-group mb-3">
+                                <input class="form-control" type="text" placeholder="Email" aria-label="Email"
+                                    aria-describedby="button-addon2">
+                                <button class="btn glass-button" id="button-addon2" type="button">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
     </div>
 
@@ -155,6 +579,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
         integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 
 </html>
