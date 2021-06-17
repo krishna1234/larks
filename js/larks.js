@@ -35,9 +35,9 @@ $(document).ready(function () {
     $('.customer-testimonials').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 1500,
-        arrows: false,
+        arrows: true,
         dots: false,
         pauseOnHover: false,
         responsive: [{
