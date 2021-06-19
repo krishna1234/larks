@@ -11,35 +11,23 @@ $(document).ready(function () {
         $("body").removeClass("offcanvas-active");
     });
 
-    $('.customer-logos').slick({
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1500,
-        arrows: false,
-        dots: false,
-        pauseOnHover: false,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 4
-            }
-        }, {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 3
-            }
-        }]
-    });
+    // active nav link    
+    // console.log(location.pathname.split('/').slice(-1)[0])
+    $("a[href='"+ location.pathname.split('/').slice(-1)[0] +"']").parent().addClass("active");
+
+    // $("a[href='"+ location.pathname.split('/')[1] +"']").parent().addClass("active");
+
 
     $('.customer-testimonials').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1500,
+        autoplay: false,
+        autoplaySpeed: 3000,
         arrows: true,
+        prevArrow:"<button type='button' class='previous-button'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+        nextArrow:"<button type='button' class='next-button'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
         dots: false,
-        pauseOnHover: false,
+        pauseOnHover: true,
         responsive: [{
             breakpoint: 768,
             settings: {
